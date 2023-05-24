@@ -22,4 +22,8 @@ public class UtilisateurResource {
     public void addUser(@RequestBody Utilisateur user) {
         userService.addUserToDataBase(user);
     }
+
+    @GetMapping("/bar")
+    public String greeting() {
+        return "football";}
 }
