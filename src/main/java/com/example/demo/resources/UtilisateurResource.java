@@ -23,7 +23,10 @@ public class UtilisateurResource {
         userService.addUserToDataBase(user);
     }
 
-    @GetMapping("/bar")
+    @GetMapping("/foo")
     public String greeting() {
-        return "football";}
+        return "bar";}
+    @GetMapping("/bar")
+    public String greetings() {
+        return "foo";}
 }
