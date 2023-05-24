@@ -22,4 +22,11 @@ public class UtilisateurResource {
     public void addUser(@RequestBody Utilisateur user) {
         userService.addUserToDataBase(user);
     }
+
+    @GetMapping("/foo")
+    public String greeting() {
+        return "bar";}
+    @GetMapping("/bar")
+    public String greetings() {
+        return "foo";}
 }
